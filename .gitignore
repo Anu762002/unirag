@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/venv/
+venv/
+ENV/
+env/
+
+# Data & Storage
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+backend/storage/chroma_db/*
+!backend/storage/chroma_db/.gitkeep
+
+# Environment variables
+.env
+backend/.env
+
+# Node / React
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# macOS / IDE
+.DS_Store
+.vscode/
+.idea/

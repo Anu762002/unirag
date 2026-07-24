@@ -11,10 +11,10 @@ class GeminiEmbeddings(Embeddings):
     Does not require PyTorch or SentenceTransformers, keeping memory footprint under 100MB.
     """
     def __init__(self):
-        logger.info("Initializing Google Gemini Embeddings (models/text-embedding-004)...")
+        logger.info("Initializing Google Gemini Embeddings (models/gemini-embedding-001)...")
         try:
             self.model = GoogleGenerativeAIEmbeddings(
-                model="models/text-embedding-004",
+                model="models/gemini-embedding-001",
                 google_api_key=settings.GEMINI_API_KEY
             )
             logger.info("Successfully initialized Google Gemini Embeddings.")

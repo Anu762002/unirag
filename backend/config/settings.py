@@ -36,6 +36,8 @@ class Settings(BaseSettings):
     
     # CORS
     ALLOWED_ORIGINS: list[str] = [
+        "*",
+        "https://unirag-delta.vercel.app",
         "http://localhost:5175",
         "http://127.0.0.1:5175",
         "http://localhost:5174",
